@@ -1,0 +1,483 @@
+body,
+html {
+  background-color: #000000;
+  color: #707070;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+html {
+  width: 100%;
+  font-size: 62.5%; }
+
+body {
+  max-width: 1920px;
+  width: 100%;
+  position: relative; }
+
+@media screen and (max-width: 1400px) {
+  body .info {
+    width: 60%; } }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 46.875%; } }
+
+@media screen and (max-width: 992px) {
+  body .page-nav {
+    display: none; }
+  body .mobile-nav {
+    display: flex;
+    margin: 1.5rem auto;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 4rem; }
+    body .mobile-nav__menu-input {
+      display: none; }
+    body .mobile-nav__menu-button {
+      font-size: 40px;
+      margin: 0 40px 0 0;
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: flex-end; }
+      body .mobile-nav__menu-button:hover {
+        cursor: pointer; }
+    body .mobile-nav__menu-input:checked + .mobile-nav-links {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: column; }
+    body .mobile-nav .mobile-nav-links__list-item {
+      margin: 1rem 4rem; }
+    body .mobile-nav .mobile-nav-links__button {
+      border-radius: 1rem;
+      width: 12rem;
+      padding: 0.5rem 1rem; }
+  body .info {
+    width: 80%; }
+    body .info__button {
+      padding: 1.5rem 0.5rem; }
+  body .examples {
+    flex-direction: column; }
+    body .examples .example {
+      margin: 10rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 31.25%; }
+  body .reasons-to-love__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body .reasons-to-love__termin {
+    margin: 2.5rem 2rem; }
+  body .step {
+    width: 80%; } }
+
+@media screen and (max-width: 576px) {
+  body .info {
+    width: 90%;
+    margin: 10rem 0 6rem 0; }
+    body .info__button {
+      padding: 1.5rem 0.5rem; }
+    body .info__creators {
+      margin: 0 0 5rem 1rem; }
+  body .icon::before {
+    display: none; }
+  body .page-footer {
+    display: none; } }
+
+.page-header {
+  max-width: 1640px;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  background-color: #000000; }
+
+.page-nav {
+  display: flex;
+  margin: 15px auto; }
+
+.mobile-nav {
+  display: none; }
+
+.mobile-nav-links {
+  display: none; }
+
+.logo {
+  flex: 1.3 1 auto; }
+
+.page-nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  font-size: 2rem;
+  flex: 1 1 400px; }
+
+.link {
+  text-decoration: none;
+  color: #707070;
+  transition: all 0.5s ease; }
+  .link:hover {
+    color: #3c82f4; }
+
+.page-nav-links__list-item {
+  list-style-type: none; }
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+  margin: 0 20px 0 0; }
+
+.auth__list-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 120px;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: medium; }
+
+.auth__button {
+  width: 100%;
+  height: 95%; }
+
+.page-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; }
+
+.gradient {
+  background-image: linear-gradient(90deg, #fe6783 0%, #ffbf84 100%);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.info {
+  margin: 13.5rem 0 10rem 0;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.info__title {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 7.1vw;
+  white-space: nowrap;
+  line-height: 8.1vw; }
+
+.info__text {
+  margin: 7rem 0 0 0;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 6rem; }
+
+.button {
+  color: #707070;
+  border-radius: 10px;
+  font-size: 2rem;
+  display: flex;
+  border: 1px #707070 solid;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; }
+  .button--active {
+    background-color: #306ef7;
+    color: #ffffff; }
+  .button:hover {
+    cursor: pointer; }
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px 0 25px 0; }
+
+.big-button {
+  border-radius: 15px;
+  padding: 3rem 1.5rem;
+  flex: 1 1 auto;
+  margin: 0 5rem; }
+
+.info__creators {
+  margin: 0 0 5rem 3rem;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .info__creators::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0fc65c;
+    box-shadow: 1px 1px 1px 5px rgba(15, 198, 92, 0.23); }
+
+.info__people-amount {
+  margin: 0 10px;
+  font-weight: bold; }
+
+.white {
+  color: #ffffff; }
+
+.reasons-to-love {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 7rem 0;
+  width: 100%; }
+
+.title {
+  color: #ffffff;
+  font-size: 7.5rem;
+  font-weight: bold;
+  text-align: center; }
+
+.reasons-to-love__title {
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 4rem 0; }
+
+.reasons-to-love__list {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%; }
+
+.reasons-to-love__termin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem;
+  text-align: center; }
+
+.reasons-to-love__termin-title {
+  margin: 0 0 3rem 0;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 500;
+  position: relative; }
+
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  background-repeat: no-repeat; }
+
+.smile-icon::before {
+  background-image: url("../images/icons/Smile_emoji.svg");
+  width: 37px;
+  height: 37px;
+  left: -42px;
+  top: -5px; }
+
+.happy-icon::before {
+  background-image: url("../images/icons/Happy_emoji.svg");
+  width: 32px;
+  height: 32px;
+  left: -37px;
+  top: 0px; }
+
+.party-icon::before {
+  background-image: url("../images/icons/Party_emoji.svg");
+  width: 43px;
+  height: 43px;
+  left: -48px;
+  top: -10px; }
+
+.reasons-to-love__termin-definition {
+  font-size: 2.2rem; }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  text-align: center;
+  margin: 0 0 6rem 0; }
+
+.step__step-number {
+  color: #3d82f2;
+  margin: 5rem 0 0 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center; }
+
+.step__title {
+  margin: 3rem 0 0rem 0; }
+
+.step__text {
+  margin: 2rem 0 3rem 0;
+  font-size: 3rem; }
+
+.examples {
+  display: flex;
+  width: 90%;
+  justify-content: center; }
+
+.example {
+  position: relative;
+  flex: 0 1 50%;
+  margin: 0 0 0 3rem; }
+  .example img {
+    position: relative;
+    z-index: 1;
+    width: 100%; }
+  .example:last-of-type .example__subtitle {
+    margin: 5rem 0 10rem 0; }
+
+.example__title {
+  font-size: 8rem;
+  text-align: center; }
+
+.highlight {
+  color: #3c82f4; }
+
+.example-list {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0 0 0 60px;
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+  position: relative; }
+  .example-list::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: -15px;
+    width: 1px;
+    border-left: 1px solid #3c82f4; }
+
+.example-list__item {
+  font-size: 2.3rem;
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0 0 10px 0;
+  line-height: 1.4; }
+  .example-list__item::before {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -55px;
+    width: 28px;
+    height: 28px;
+    background: #2d2d2d;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid #3c82f4; }
+
+.example__button {
+  width: 45rem;
+  margin: 5rem auto;
+  font-size: 5rem; }
+
+.example__subtitle {
+  color: #0fc65c;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: 5rem 0; }
+
+.example__white-cube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #8b8b8b;
+  width: 40%;
+  height: 35%; }
+
+.experts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.experts__title {
+  text-align: center; }
+
+.experts__example {
+  margin: 5rem 0;
+  width: 100%; }
+
+.creators {
+  background-image: url("../images/creators.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.get-started__title {
+  font-size: 10rem;
+  margin: 5rem; }
+
+.get-started__subtitle {
+  font-size: 4.3rem;
+  color: white;
+  text-align: center; }
+
+.get-started__button {
+  font-size: 5rem;
+  margin: 5rem;
+  width: 45rem; }
+
+.page-footer {
+  margin: 10rem 0 0 0;
+  display: flex;
+  width: 90%; }
+  .page-footer ul {
+    flex: none;
+    margin: 0 0 0 auto; }
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+
+.logo__info {
+  font-size: 2.7rem; }
