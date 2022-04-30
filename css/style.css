@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body,
 html {
   background-color: #000000;
@@ -35,24 +36,28 @@ body {
     align-items: center;
     font-size: 4rem; }
     body .mobile-nav__menu-input {
-      display: none; }
-    body .mobile-nav__menu-button {
-      font-size: 40px;
-      margin: 0 40px 0 0;
-      flex: 1 1 auto;
-      display: flex;
-      justify-content: flex-end; }
-      body .mobile-nav__menu-button:hover {
-        cursor: pointer; }
+      margin: 0 5rem 0 0;
+      position: relative;
+      align-self: flex-start;
+      width: 26px;
+      height: 40px; }
+    body .mobile-nav__menu-input::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "☰";
+      color: #8b8b8b;
+      background-color: #000000;
+      font-size: 30px; }
     body .mobile-nav__menu-input:checked + .mobile-nav-links {
       display: flex;
       width: 100%;
       justify-content: center;
       align-items: flex-end;
       flex-direction: column; }
-    body .mobile-nav .mobile-nav-links__list-item {
+    body .mobile-nav-links__list-item {
       margin: 1rem 4rem; }
-    body .mobile-nav .mobile-nav-links__button {
+    body .mobile-nav-links__button {
       border-radius: 1rem;
       width: 12rem;
       padding: 0.5rem 1rem; }
@@ -315,6 +320,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.steps__title {
+  opacity: 0;
+  position: absolute; }
 
 .step {
   display: flex;
